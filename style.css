@@ -1,0 +1,615 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+/* =========================
+      NAVIGATION HEADER 
+========================= */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #050505;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-brand {
+    color: #d4af37 !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: #f5f1e8 !important;
+    margin: 0 12px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #d4af37 !important;
+}
+
+/* =========================
+       HOME SECTION
+========================= */
+.hero-section {
+    background-color: #111111;
+    color: #f5f1e8;
+    min-height: 75vh;
+    padding-top: 80px;
+}
+
+.hero-content {
+    padding: 80px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    color: #f5f1e8;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.hero-content .lead {
+    color: #d8d0c0;
+    max-width: 550px;
+    margin-top: 25px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-buttons .btn {
+    margin-right: 10px;
+}
+
+.hero-image-container {
+    padding: 0;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 130%;
+    height: 75vh;
+    object-fit: cover;
+    object-position: left center;
+    border-radius: 30px 0 0 30px;
+    transform: translateX(20%);
+}
+
+/* =========================
+       ABOUT SECTION 
+========================= */
+.about-section {
+    background-color: #fff;
+}
+
+.about-images {
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.about-main-image {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.about-small-card {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 180px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.about-small-card span {
+    display: block;
+    font-size: 38px;
+}
+
+.about-small-card p {
+    color: #5f554e;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.about-highlight {
+    color: #c9973e;
+}
+
+.about-feature {
+    padding: 15px 18px;
+    border-left: 3px solid #d6a84f;
+    background-color: #faf8f4;
+}
+
+.about-feature h5 {
+    color: #c9973e;
+    margin-bottom: 5px;
+}
+
+.about-feature p {
+    margin: 0;
+    font-size: 14px;
+    color: #5f554e;
+}
+
+
+/* =========================
+       MENU SECTION 
+========================= */
+
+#menu {
+    background-color: #181818;
+}
+
+#menu h2 {
+    color: #f5f1e8;
+}
+
+.menu-description {
+    color: #d8d0c0;
+}
+
+/* Menu Cards */
+.menu-card {
+    background-color: #222222;
+    border: 1px solid #3a3a3a;
+    color: #f5f1e8;
+    overflow: hidden;
+}
+
+.menu-card .card-img-top {
+    height: 240px;
+    object-fit: cover;
+}
+
+.menu-card .card-title {
+    color: #e8d3a2;
+}
+
+.menu-card .card-text {
+    color: #d8d0c0;
+}
+
+.menu-price {
+    color: #e8d3a2;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.menu-card {
+    overflow: hidden;
+    transition: transform 0.3s ease, 
+                box-shadow 0.3s ease, 
+                background-color 0.3s ease;
+}
+
+.menu-card {
+    overflow: hidden;
+    border: 1px solid #3a3a3a;
+    transition: transform 0.3s ease, 
+                box-shadow 0.3s ease, 
+                border-color 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4a017;
+    box-shadow: 0 0 18px rgba(212, 160, 23, 0.35);
+}
+
+.menu-card .card-img-top {
+    transition: transform 0.4s ease;
+}
+
+.menu-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+    RESERVATION SECTION 
+========================= */
+.reservation-new {
+    background-color: #f6f2eb;
+}
+
+.reservation-box {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.10);
+}
+
+/* LEFT */
+.reservation-info {
+    background-color: #2e241f;
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+}
+
+.reservation-info-content {
+    padding: 55px;
+}
+
+.reservation-info h2 {
+    line-height: 1.1;
+}
+
+.reservation-details {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 25px;
+}
+
+.reservation-details small {
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* RIGHT */
+.reservation-form-side {
+    background-color: #fff;
+}
+
+.reservation-form-side h3 {
+    color: #2e241f;
+}
+
+.reservation-form-side .form-control,
+.reservation-form-side .form-select {
+    padding: 11px 14px;
+    border-color: #ddd5cc;
+}
+
+.reservation-form-side .form-control:focus,
+.reservation-form-side .form-select:focus {
+    border-color: #d6a84f;
+    box-shadow: 0 0 0 0.2rem rgba(214, 168, 79, 0.15);
+}
+
+
+/* =========================
+       REVIEW SECTION 
+========================= */
+.reviews-section {
+    background-color: #fff;
+}
+
+.review-card {
+    background-color: #f8f5ef;
+    padding: 55px 70px;
+    border-radius: 20px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.review-stars {
+    color: #d6a84f;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.review-text {
+    color: #4e4540;
+    font-size: 18px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.review-name {
+    color: #2e241f;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.reviews-section .carousel {
+    padding-bottom: 50px;
+}
+
+.reviews-section .carousel-indicators {
+    bottom: 0;
+}
+
+.reviews-section .carousel-indicators button {
+    background-color: #c9973e;
+}
+
+.reviews-section .carousel-control-prev,
+.reviews-section .carousel-control-next {
+    width: 8%;
+}
+
+
+/* Guest Satisfaction Progress Bars */
+.progress {
+    height: 8px !important;
+    background-color: #e9e1d2 !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+}
+
+.progress .progress-bar {
+    background-color: #d4a017 !important;
+    border-radius: 20px !important;
+    transition: width 1s ease;
+}
+
+/* Guest Satisfaction Title */
+
+.row.justify-content-center.mt-5.pt-4 h4 {
+    color: #2b2b2b;
+    font-weight: 700;
+}
+
+.row.justify-content-center.mt-5.pt-4 p {
+    font-size: 14px;
+}
+
+/* Percentage */
+.row.justify-content-center.mt-5.pt-4 .text-muted {
+    color: #b8860b !important;
+    font-weight: 600;
+}
+
+
+/* =========================
+          FOOTER  
+========================= */
+.siamora-footer {
+    width: 100%;
+    background: #1f1f1f;
+    color: white;
+}
+
+/* MAIN FOOTER ROW */
+.siamora-footer-row {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 60px 0;    
+}
+
+/* COLUMNS */
+.siamora-footer-row .footer-column {
+    flex: 1 1 0;
+    width: 33.333%;
+    display: block;
+}
+
+/* BRAND */
+.footer-brand {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.footer-tagline {
+    color: #d4a017;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-description {
+    max-width: 330px;
+    line-height: 1.7;
+    color: #cccccc;
+}
+
+/* TITLES */
+    .footer-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* LINKS */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d4a017;
+}
+
+/* CONTACT */
+.siamora-footer .footer-column p {
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+.footer-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #d4a017;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.footer-button:hover {
+    background: #b8860b;
+    color: #ffffff;
+}
+
+/* BOTTOM */
+.siamora-footer .footer-bottom {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    color: #999999;
+    font-size: 14px;
+}
+
+.siamora-footer .footer-bottom p {
+    margin: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 991px) {
+
+/* home section */
+.hero-content {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content .lead {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-image {
+    height: 400px;
+}
+
+/* about section */
+.about-images {
+    padding-right: 0;
+    padding-bottom: 50px;
+}
+
+.about-main-image {
+    width: 100%;
+    height: 400px;
+}
+
+.about-small-card {
+    right: 10px;
+}
+
+/* menu section */
+.menu-card .card-img-top {
+    height: 220px;
+}
+
+.menu-card .card-body {
+    padding: 20px;
+}
+
+/* reservation section */
+.reservation-info {
+    min-height: auto;
+}
+
+.reservation-info-content {
+    padding: 40px 30px;
+}
+
+/* reviews section */
+.review-card {
+   padding: 40px 25px;
+}
+
+.review-text {
+    font-size: 16px;
+}
+
+.reviews-section .carousel-control-prev,
+.reviews-section .carousel-control-next {
+    display: none;
+}
+
+/* footer section */
+.siamora-footer-row {
+    flex-direction: column !important;
+    gap: 35px;
+}
+
+.siamora-footer-row .footer-column {
+    width: 100%;
+}
+
+.siamora-footer .footer-bottom {
+    flex-direction: column !important;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #aaa09a;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d6a84f;
+}
+
+.siamora-footer p {
+    color: #aaa09a;
+    line-height: 1.7;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 20px 0;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+}
+
+}
